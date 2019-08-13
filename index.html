@@ -21,7 +21,6 @@
         left:23%;
         /* display: table-cell;
         vertical-align: middle; */
-        z-index: -1;
       }
       #app {
         width: 300;
@@ -31,9 +30,6 @@
       }
 
       .box {
-        /* display: table; */
-        /* text-align: center; */
-
         margin-left: -1px;
         margin-top: -1px;
         border: 1px solid black;
@@ -42,40 +38,50 @@
         height: 100; 
         color: transparent;
       }
+
+      .box:hover {
+        background-color: #f0f0f2;
+        cursor: pointer;
+      }
+
+      .winningLine {
+        background-color: blue;
+      }
     </style>
   </head>
   
   <body>
     <div id="app">
-      <div class='box'>0
+      <div id="0" class='box'>0
         <span></span>
       </div>
-      <div class='box'>1
+      <div id="1" class='box'>1
         <span></span>
       </div>
-      <div class='box'>2
+      <div id="2" class='box'>2
         <span></span>
       </div>
-      <div class='box'>3
+      <div id="3" class='box'>3
         <span></span>
       </div>
-      <div class='box'>4
+      <div id="4" class='box'>4
         <span></span>
       </div>
-      <div class='box'>5
+      <div id="5" class='box'>5
         <span></span>
       </div>
-      <div class='box'>6
+      <div id="6" class='box'>6
         <span></span>
       </div>
-      <div class='box'>7
+      <div id="7" class='box'>7
         <span></span>
       </div>
-      <div class='box'>8
+      <div id="8" class='box'>8
         <span></span>
       </div>
     </div>
     <div id="winnertext"></div>
+    <button class="restart">restart</button>
     <script src="app.js"></script>
   </body>
 </html>
